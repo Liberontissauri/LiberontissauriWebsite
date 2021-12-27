@@ -1,2 +1,12 @@
-.container {
+
+.background {
+  z-index: -1;
+
+  position: fixed;
+  top:0;
+  left: 0;
+  min-height: 102vh;
+  width: 100%;
+
+  background: linear-gradient(180deg, #63A2DD 0%, #C2DBF2 100%);
 }
