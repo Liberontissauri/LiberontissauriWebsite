@@ -1,0 +1,32 @@
+.container {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 0.28em;
+
+    color: #FFFFFF;
+}
+.text {
+    max-width: 680px;
+    margin: 0 20px;
+
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
