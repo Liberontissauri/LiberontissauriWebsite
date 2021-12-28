@@ -1,0 +1,34 @@
+.container {
+    width: 300px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px;
+    margin: 45px;
+
+    background: linear-gradient(205.46deg, rgba(255, 255, 255, 0.5) 27.08%, rgba(255, 255, 255, 0) 100%);
+
+    transition: background-color ease 0.3s, transform ease 0.3s;
+}
+.container:hover {
+    cursor: pointer;
+    background-color: rgba(250, 255, 250, 0.349);
+    transform: scale(1.05);
+}
+.title {
+    margin: 0;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.cover {
+    opacity: 0.7;
+}

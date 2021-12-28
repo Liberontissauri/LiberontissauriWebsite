@@ -1,0 +1,58 @@
+.container {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 0.28em;
+
+    color: #FFFFFF;
+}
+.text {
+    max-width: 680px;
+    margin: 0 20px;
+
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.cardDiv {
+    display: flex;
+    flex-direction: row;
+}
+.button {
+    width: 330px;
+    height: 70px;
+
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+
+    background: linear-gradient(205.46deg, rgba(255, 255, 255, 0.5) 27.08%, rgba(255, 255, 255, 0) 100%);
+    color: #FFFFFF;
+
+    border: none;
+    
+    transition: background-color ease 0.3s, transform ease 0.3s;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(250, 255, 250, 0.349);
+    transform: scale(1.05);
+}
