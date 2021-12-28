@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.background}>
         <svg width="100%" height="100vh">
           <pattern id="pattern-checkers" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse" >
-            <rect fill="none" x="0" y="30" width="105" height="105" transform="rotate(-45 50 50)" opacity="40%" stroke="white"/>
+            <rect fill="none" x="0" y="30" width="105" height="105" transform="rotate(-45 50 50)" opacity="20%" stroke="white"/>
           </pattern>
           <rect x="0" y="0" width="100%" height="100vh" fill="url(#pattern-checkers)" />
         </svg>
