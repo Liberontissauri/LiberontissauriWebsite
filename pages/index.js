@@ -6,10 +6,15 @@ import styles from '../styles/Home.module.css'
 import Projects from '../components/Sections/Projects'
 import { useState, useEffect } from 'react'
 import Granim from 'granim'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter()
   const [hasSetBackground, setHasSetBackground] = useState(false)
+  const [hasSetScroll, setHasSetScroll] = useState(false)
   const [background, setBackground] = useState("")
+  const [SelectedSection, setSelectedSection] = useState(0)
+  const Sections = ["Intro", "About", "Projects"]
 
   useEffect(() => {
     if(!hasSetBackground) {
@@ -30,8 +35,23 @@ export default function Home() {
       }}));
       setHasSetBackground(true);
     }
+    if(!hasSetScroll) {
+      window.onwheel = onPageScroll;
+      setHasSetScroll(true)
+    }
     
   });
+  function onPageScroll(e) {
+    e.preventDefault()
+    const direction = e.deltaY;
+    console.log(direction)
+    if(direction < 0 && SelectedSection > 0) {
+      SelectedSection -= 1
+    } else if(direction > 0 && SelectedSection < Sections.length - 1) {
+      SelectedSection += 1
+    }
+    router.push(`/#${Sections[SelectedSection]}`)
+  }
 
   return (
     <div className={styles.container}>

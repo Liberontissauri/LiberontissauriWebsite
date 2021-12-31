@@ -4,7 +4,7 @@ import Styles from "./index.module.css"
 
 function AboutMe() {
     return (
-        <div className={Styles.container}>
+        <div id="About" className={Styles.container}>
             <h2 className={Styles.title}>Who am I?</h2>
             <p className={Styles.text}>Heyo, my name is João Liberato, and I’ve been 
                 learning software development for the last 4 years

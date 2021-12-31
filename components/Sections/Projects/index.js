@@ -5,7 +5,7 @@ import ProjectCard from "../../ProjectCard"
 
 function Projects() {
     return (
-        <div className={Styles.container}>
+        <div id="Projects" className={Styles.container}>
             <h2 className={Styles.title}>Projects</h2>
             <div className={Styles.cardDiv}>
                 <ProjectCard title="Brainfuck Interpreter" src="/brain.png"></ProjectCard>
